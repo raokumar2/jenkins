@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Pulls code from the Git repo where this Jenkinsfile lives
-                checkout jenkins
+                checkout scm
             }
         }
         stage('Build Docker Image') {
